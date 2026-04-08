@@ -20,7 +20,11 @@ This helped highlight that inquiry volumes spike around enrollment deadlines and
 4. Visualization (Power BI)
 
 ## Dashboard Preview
+September 2023
 ![alt text](image.png)
+
+November 2023
+![alt text](image-1.png)
 
 ## Key Insights for Sept 2023
 - Inquiry volume spikes at start of term and key deadlines

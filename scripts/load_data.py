@@ -3,7 +3,7 @@ import sqlite3              #create and interact with database
 from pathlib import Path    #helps build file paths safely
 
 #location of python script and builds path to CSV file and database file
-file_path = Path(__file__).resolve().parents[1] / "data" / "cleaned" / "september_master.csv"
+file_path = Path(__file__).resolve().parents[1] / "data" / "cleaned" / "november_master.csv"
 db_path = Path(__file__).resolve().parents[1] / "data" / "fyeo.db"
 
 #load data
