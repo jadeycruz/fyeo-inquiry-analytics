@@ -1,0 +1,25 @@
+delivery_method
+if Text.StartsWith([raw], "Email") then "Email"
+else if Text.StartsWith([raw], "Phone") then "Phone"
+else "In-person"
+
+
+num
+Text.Select([raw], {"0".."9"})
+
+day_name
+if [num] <= 1 then "Monday"
+else if [num] <= 4 then "Tuesday"
+else if [num] <= 8 then "Wednesday"
+else if [num] <= 12 then "Thursday"
+else "Friday"
+
+inquiry_date
+if [day_name] = "Monday" then #date(2023, 9, 4)
+else if [day_name] = "Tuesday" then #date(2023, 9, 5)
+else if [day_name] = "Wednesday" then #date(2023, 9, 6)
+else if [day_name] = "Thursday" then #date(2023, 9, 7)
+else #date(2023, 9, 8)
+
+
+month	week	term	inquiry_topic	category	inquiry_date	day_name	delivery_method	inquiry_count
